@@ -1,0 +1,122 @@
+@import "normalize";
+@import "layout";
+@import "elements";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+background-color: #20202D;
+color: #fff;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 985px;
+}
+.ba-header{
+	padding-top: 43px;
+	@media screen and (min-width:640px){
+	padding-top: 63px;
+		
+	}
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__link{
+		text-decoration: none;
+		margin-left: 10px;
+		@media screen and (min-width:640px){
+			margin-left: 20px;
+		}
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+}
+.ba-hero{
+	background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+padding-top: 39px;
+@media screen and (min-width:640px){
+	padding-top: 105px;
+}
+	&__wrapper{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: column-reverse;
+padding-bottom: 142px;
+@media screen and (min-width:640px){
+	flex-direction: row;
+}
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: Roboto;
+		padding-top: 17px;
+		text-align: center;
+		@media screen and (min-width:640px){
+			max-width: 44%;
+			padding-top: 0;
+			text-align: left;
+		}
+	}
+	&__subtitle{
+		color: #FFBB01;
+		font-weight: 400;
+		font-size: 24px;
+line-height: 28px;
+
+	}
+	&__title{
+		margin: 0;
+		font-weight: 700;
+		padding-top: 14px;
+		padding-bottom: 20px;
+	}
+	&__description{
+		margin: 0;
+		font-weight: 400;
+		font-size: 16px;
+line-height: 28px;
+padding-bottom: 32px;
+	}
+	&__button{
+		background: linear-gradient(180deg, #FDDE76 0%, #FFBB01 100%);
+		box-shadow: 0px 4px 0px #B68500;
+		border-radius: 5px 5px 10px 10px;
+		text-decoration: none;
+		color: #2E2E30;
+		text-align: center;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 12px;
+line-height: 14px;
+padding: 24px 42px;
+display: inline-block;
+	}
+	&__avatar{
+		width:180px;
+		height: 180px;
+		border:4px solid #fff;
+			border-radius: 50%;
+		background-image: url(../img/cat.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+@media screen and (min-width:640px){
+	width:300px;
+	height:300px;
+	border:9px solid #fff;
+}
+@media screen and (min-width:1024px){
+	border:13px solid #fff;
+	width:389px;
+	height:389px;
+	margin: 0;
+}
+	}}	
